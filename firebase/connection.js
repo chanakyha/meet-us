@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-
+import { getAuth } from "firebase/auth";
 const app = initializeApp({
   apiKey: process.env.NEXT_PUBLIC_APIKEY,
   authDomain: process.env.NEXT_PUBLIC_AUTHDOMAIN,
@@ -9,4 +9,6 @@ const app = initializeApp({
   appId: process.env.NEXT_PUBLIC_APPID,
 });
 
-export { app };
+const auth = getAuth(app);
+
+export { app, auth };
