@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         "fast-hands": ["Fasthand", "cursive"],
+        pafacto: ["Pacifico", "cursive"],
       },
     },
   },
