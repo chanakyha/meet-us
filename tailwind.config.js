@@ -6,6 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: "#202225",
+        secondary: "#131517",
+      },
       fontFamily: {
         "fast-hands": ["Fasthand", "cursive"],
         pafacto: ["Pacifico", "cursive"],
