@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Login from "../components/Login";
 import { useAuth } from "../hooks/useAuth";
-import Header from "../components/Menu";
+import Header from "../components/Header";
+import SideList from "../components/SideList";
 import { Divider } from "antd";
 
 const Home = () => {
@@ -17,7 +18,9 @@ const Home = () => {
       </Head>
 
       <div className="flex h-full">
-        <div className="w-[25%] h-screen hidden md:flex"></div>
+        <div className="w-[25%] h-screen hidden md:flex flex-col">
+          <SideList />
+        </div>
         <div className="h-full hidden md:block">
           <Divider type="vertical" style={{ height: "100%" }} />
         </div>
